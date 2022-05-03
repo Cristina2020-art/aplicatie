@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #0e96a5;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: rgb(54, 101, 125);
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* Pentru tablete: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* Pentru telefoane mobile: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#078990;padding:15px;">
+  <h1>Cinque Terre</h1>
+  <h3>Redimensionați fereastra browserului</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Plimbare</div>
+    <div class="menuitem">Transport</div>
+    <div class="menuitem">Istoric</div>
+    <div class="menuitem">Galerie</div>
+  </div>
+
+  <div class="main">
+    <h2>Plimbare</h2>
+    <p>Plimbarea de la Monterosso la Riomaggiore îți va dura aproximativ două ore, o oră sau o oră, în funcție de condițiile meteorologice și de forma ta fizică.</p>
+    <img src="img_5terre.jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>Ce e?</h2>
+    <p>Cinque Terre cuprinde cinci sate: Monterosso, Vernazza, Corniglia, Manarola și Riomaggiore.</p>
+    <h2>Unde?</h2>
+    <p>Pe coasta de nord-vest a Rivierei Italiene, la nord de orașul La Spezia.</p>
+    <h2>Pret?</h2>
+    <p>Plimbarea este gratuita!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#126343;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Această pagină web face parte dintr-o demonstrație a designului web fluid realizat de w3schools.com. Redimensionați fereastra browserului pentru a vedea conținutul răspunde la redimensionare.</div>
+
+<h2>Afișați imagini diferite în funcție de lățimea browserului</h2>
+<p>Redimensionați lățimea browserului și imaginea se va schimba la 600 px și 1500 px.</p>
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="img_flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+</body>
+</html>
+
+</body>
+</html>
+
